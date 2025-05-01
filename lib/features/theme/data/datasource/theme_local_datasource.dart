@@ -5,7 +5,7 @@ class ThemeLocalDatasource{
 
   ThemeLocalDatasource({required this.sharedPreferences});
 
-  Future saveTheme(ThemeEntity themeEntity) async {
+  Future<void> saveTheme(ThemeEntity themeEntity) async {
     final themeValue = themeEntity.themeType == ThemeType.dark ? 'dark' : 'light';
     await sharedPreferences.setString('theme_key', themeValue);
   }

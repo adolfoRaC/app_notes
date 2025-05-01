@@ -8,28 +8,23 @@ class AppTheme {
       useMaterial3: true,
       textTheme: GoogleFonts.soraTextTheme(
         ThemeData.light().textTheme.apply(
-              bodyColor: isDarkMode
-                  ? AppColors.onSurfaceDark
-                  : AppColors.onSurfaceLight,
-              displayColor: isDarkMode
-                  ? AppColors.onSurfaceDark
-                  : AppColors.onSurfaceLight,
+              bodyColor: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
+              displayColor: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
             ),
       ),
       colorScheme: ColorScheme(
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
         primary: isDarkMode ? AppColors.primaryDark : AppColors.primaryLight,
-        onPrimary:
-            isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
-        secondary:
-            isDarkMode ? AppColors.secondaryDark : AppColors.secondaryLight,
-        onSecondary:
-            isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
+        onPrimary: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
+        secondary: isDarkMode ? AppColors.secondaryDark : AppColors.secondaryLight,
+        onSecondary: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
         error: Colors.red,
         onError: Colors.white,
         surface: isDarkMode ? AppColors.surfaceDark : AppColors.surfaceLight,
-        onSurface:
-            isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
+        onSurface: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
+      ),
+      cardTheme: CardTheme(
+        color: isDarkMode ? AppColors.cardDark : AppColors.cardLight,
       ),
     );
   }

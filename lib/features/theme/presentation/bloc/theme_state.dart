@@ -1,13 +1,8 @@
 import 'package:app_notes/features/theme/domain/entity/theme_entity.dart';
 
-enum ThemeStatus{
-  initial,
-  loading,
-  success,
-  error
-}
+enum ThemeStatus { initial, loading, success, error }
 
-class ThemeState{
+class ThemeState {
   final ThemeStatus status;
   final String? errorMessage;
   final ThemeEntity? themeEntity;

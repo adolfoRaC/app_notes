@@ -12,7 +12,7 @@ class ThemeRepositoryImpl implements ThemeRepository {
   }
 
   @override
-  Future saveTheme(ThemeEntity themeEntity) async {
+  Future<void> saveTheme(ThemeEntity themeEntity) async {
     await themeLocalDatasource.saveTheme(themeEntity);
   }
 }

@@ -10,8 +10,12 @@ class AppColors {
   static const Color secondaryDark = Color(0xFFFFFFFF);
 
   // Colores de fondo/superficie
-  static const Color surfaceLight = Color(0xFFFFFEFE);
+  static const Color surfaceLight = Color(0xFFEDEEF4);
   static const Color surfaceDark = Color(0xFF030303);
+  
+  // Colores de card
+  static const cardLight = Color(0xFFFFFEFE);
+  static const cardDark = Color(0xFF1E1E1E);
 
   // Colores de texto o elementos encima del fondo
   static const Color onSurfaceLight = Color(0xFF131313);
