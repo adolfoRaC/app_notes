@@ -13,7 +13,7 @@ class CustomQuillSimpleToolbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return QuillSimpleToolbar(
       controller: _controller,
-      configurations: const QuillSimpleToolbarConfigurations(
+      config: const QuillSimpleToolbarConfig(
         axis: Axis.horizontal,
         showDirection: true,
         multiRowsDisplay: false,

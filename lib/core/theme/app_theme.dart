@@ -23,7 +23,7 @@ class AppTheme {
         surface: isDarkMode ? AppColors.surfaceDark : AppColors.surfaceLight,
         onSurface: isDarkMode ? AppColors.onSurfaceDark : AppColors.onSurfaceLight,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: isDarkMode ? AppColors.cardDark : AppColors.cardLight,
       ),
     );
